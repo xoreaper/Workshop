@@ -9,15 +9,25 @@ public class Student {
         this.age = age;
     }
 
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+
     @Override
     public String toString() {
         return name + ", " + age;
     }
 
     public static void main(String[] args) {
-        Student student = new Student("Bibidh", 18);
+        Student student = new Student("Alice", 20);
+        System.out.println(student);
+        student.setName("Bob");
+        student.setAge(22);
         System.out.println(student);
     }
 }
+
 
 
